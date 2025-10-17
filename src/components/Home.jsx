@@ -33,7 +33,7 @@ function Home() {
     const encoded = encodeURIComponent(message);
 
     // ✅ رقمك على واتساب بصيغة دولية (بدون +)
-    const phone = "22246789000"; // 🔴 غيّر هذا الرقم إلى رقمك الحقيقي
+    const phone = "22249677414"; // 🔴 غيّر هذا الرقم إلى رقمك الحقيقي
 
     // ✅ فتح واتساب
     window.open(`https://wa.me/${phone}?text=${encoded}`, "_blank");

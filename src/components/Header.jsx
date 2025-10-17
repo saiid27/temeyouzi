@@ -34,7 +34,7 @@ function Header() {
     const encoded = encodeURIComponent(message);
 
     // رقمك على واتساب بصيغة دولية
-    const phoneNumber = "22246789000"; // 🔴 غيّر هذا الرقم إلى رقمك
+    const phoneNumber = "22249677414"; // 🔴 غيّر هذا الرقم إلى رقمك
 
     // فتح واتساب
     window.open(`https://wa.me/${phoneNumber}?text=${encoded}`, "_blank");
