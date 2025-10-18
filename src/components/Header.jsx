@@ -7,7 +7,7 @@ function Header() {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    
     phone: "",
     section: "",
   });
@@ -21,16 +21,16 @@ function Header() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, phone, section } = formData;
+    const { name, number, amount, section, paymentMethod } = formData;
 
     // تحقق من ملء الحقول
-    if (!name || !email || !phone || !section) {
+    if (!name || !number || !amount || !section || !paymentMethod) {
       alert("يرجى تعبئة جميع الحقول قبل الإرسال");
       return;
     }
 
     // رسالة الاشتراك
-    const message = `👋 مرحبًا،\n\nاسم المشترك: ${name}\nالبريد الإلكتروني: ${email}\nرقم الهاتف: ${phone}\nالقسم: ${section}`;
+     const message = `  طلب انضمام ،\n\nاسم الطالب: ${name}\nرقم الهاتف: ${number}\nالمبلغ: ${amount}\nالقسم: ${section}\nطريقة الدفع: ${paymentMethod}`;
     const encoded = encodeURIComponent(message);
 
     // رقمك على واتساب بصيغة دولية
@@ -51,7 +51,7 @@ function Header() {
           <div className="account">
             <ul>
               <li>
-                <a href="https://login-peach-mu.vercel.app/">
+                <a href="https://login-amzm.vercel.app/">
                   <HiOutlineLogin />
                   تسجيل الدخول
                 </a>
@@ -79,9 +79,9 @@ function Header() {
             className="modal"
             onClick={(e) => e.stopPropagation()} // منع إغلاق المودال عند الضغط داخله
           >
-            <h2>📋 نموذج الاشتراك</h2>
+            <h2>📋 نموذج التسجيل</h2>
             <form onSubmit={handleSubmit}>
-              <label>اسم المشترك:</label>
+              <label>اسم الطالب:</label>
               <input
                 type="text"
                 name="name"
@@ -90,22 +90,21 @@ function Header() {
                 required
               />
 
-              <label>البريد الإلكتروني:</label>
+              <label>رقم الهاتف:</label>
               <input
-                type="email"
-                name="email"
-                value={formData.email}
+                type="tel"
+                name="number"
+                value={formData.number}
                 onChange={handleChange}
                 required
               />
 
-              <label>رقم الهاتف:</label>
+              <label>المبلغ:</label>
               <input
-                type="tel"
-                name="phone"
-                value={formData.phone}
-                onChange={handleChange}
-                required
+                type="text"
+                name="amount"
+                value={formData.amount} // هنا المبلغ ثابت
+                disabled // يجعل الحقل غير قابل للتعديل
               />
 
               <label>القسم:</label>
@@ -116,6 +115,20 @@ function Header() {
                 onChange={handleChange}
                 required
               />
+
+              <label>طريقة الدفع:</label>
+              <select
+                name="paymentMethod"
+                value={formData.paymentMethod}
+                onChange={handleChange}
+                required
+              >
+                <option value="">اختر طريقة الدفع</option>
+                <option value="بنكي">بنكيلي</option>
+                <option value="مصرفي">مصرفي</option>
+                <option value="سداد">سداد</option>
+                <option value="بيم بنك">بيم بنك</option>
+              </select>
 
               <div className="btns">
                 <button type="submit" className="btn btn-red">
