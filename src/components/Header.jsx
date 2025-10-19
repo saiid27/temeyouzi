@@ -30,7 +30,7 @@ function Header() {
     }
 
     // رسالة الاشتراك
-     const message = `  طلب انضمام ،\n\nاسم الطالب: ${name}\nرقم الهاتف: ${number}\nالمبلغ: ${amount}\nالقسم: ${section}\nطريقة الدفع: ${paymentMethod}`;
+     const message = `  مرحبا منصة temeyouzi اود الاشتراك عندكم  ،\n\nاسم الطالب: ${name}\nرقم الهاتف: ${number}\nالمبلغ: ${amount}\nالقسم: ${section}\nطريقة الدفع: ${paymentMethod}`;
     const encoded = encodeURIComponent(message);
 
     // رقمك على واتساب بصيغة دولية
