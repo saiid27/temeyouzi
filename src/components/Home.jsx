@@ -64,7 +64,7 @@ function Home() {
           <p> يمكنك البحث عن نتيجتك بالإسم او رقم الجلوس </p>
           <div className="mt-2">
             <a
-              href="https://www.temeyouzi.site/p/blog-page_27.html"
+              href="https://couratbac.blogspot.com/p/blog-page_19.html"
               className="btn red"
             >
               الدخول إلي صفحة البحث
@@ -80,7 +80,7 @@ function Home() {
           <p> يمكنك البحث عن نتيجتك بالإسم او رقم الجلوس </p>
           <div className="mt-2">
             <a
-              href="https://www.temeyouzi.site/p/session-complementaire.html"
+              href="https://couratbac.blogspot.com/p/blog-page_86.html"
               className="btn red"
             >
               الدخول إلي صفحة البحث
@@ -96,7 +96,7 @@ function Home() {
           <p> يمكنك البحث عن نتيجتك بالإسم او رقم الجلوس </p>
           <div className="mt-2">
             <a
-              href="https://www.temeyouzi.site/p/blog-page.html"
+              href="https://couratbac.blogspot.com/p/blog-page.html"
               className="btn red"
             >
               الدخول إلي صفحة البحث
