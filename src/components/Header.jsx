@@ -7,7 +7,7 @@ function Header() {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    
+      amount: "100MRU", // المبلغ ثابت
     phone: "",
     section: "",
   });

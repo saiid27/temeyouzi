@@ -6,7 +6,7 @@ function Home() {
   const [formData, setFormData] = useState({
     name: "",
     number: "",
-    amount: "100", // المبلغ ثابت
+    amount: "100MRU", // المبلغ ثابت
     section: "",
     paymentMethod: "", // طريقة الدفع
   });
@@ -29,7 +29,7 @@ function Home() {
     }
 
     // ✅ الرسالة المرسلة إلى واتساب
-    const message = `  طلب انضمام ،\n\nاسم الطالب: ${name}\nرقم الهاتف: ${number}\nالمبلغ: ${amount}\nالقسم: ${section}\nطريقة الدفع: ${paymentMethod}`;
+    const message = `  مرحبا منصة Temeyouzi اود التسجيل   ،\n\nاسم الطالب: ${name}\nرقم الهاتف: ${number}\nالمبلغ: ${amount}\nالقسم: ${section}\nطريقة الدفع: ${paymentMethod}`;
     const encoded = encodeURIComponent(message);
 
     // ✅ رقمك على واتساب بصيغة دولية (بدون +)
@@ -57,6 +57,11 @@ function Home() {
         </div>
       </section>
 
+
+
+
+
+
       {/* 2) SD (CTA خفيف/معلومة) */}
       <section id="sd">
         <div className="container">
@@ -72,6 +77,9 @@ function Home() {
           </div>
         </div>
       </section>
+
+
+
 
       {/* 3) SD (CTA خفيف/معلومة) */}
       <section id="sd">
@@ -117,13 +125,13 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* 6) صورة */}
+ {/* 6) صورة */}
       <section id="gh">
         <div className="fg">
           <img src="Les profs.jpg" alt="go" className="prof-img" />
         </div>
       </section>
+     
 
       {/* نموذج التسجيل المنبثق */}
       {showForm && (
