@@ -6,7 +6,7 @@ function Home() {
   const [formData, setFormData] = useState({
     name: "",
     number: "",
-    amount: "100MRU", // المبلغ ثابت
+    amount: "1000 MRU", // المبلغ ثابت
     section: "",
     paymentMethod: "", // طريقة الدفع
   });
