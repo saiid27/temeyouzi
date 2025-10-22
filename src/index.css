@@ -75,12 +75,14 @@ a{ text-decoration:none; color:inherit; }
   display:inline-flex; align-items:center; gap:6px;
   padding:8px 12px; border-radius:8px; font-size:14px; font-weight:700;
   color:#fff;
+  background: #39a1e6;
 }
-.account .btn-join{
+ .btn-join{
   background:var(--sky-blue);
   padding:8px 14px; border-radius:8px; font-weight:800; font-size:14px;
   transition:filter .2s ease;
 }
+
 .account .btn-join:hover{ filter:brightness(1.07); }
 
 /* ====== Buttons عامة ====== */
@@ -405,7 +407,7 @@ span{
 .btn-transparent {
   background: transparent;
   border: 1px solid #e63946;
-  color: #e63946;
+  color: #39a1e6;
   padding: 10px 20px;
   border-radius: 6px;
 }
