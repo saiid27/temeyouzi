@@ -43,11 +43,12 @@ function Header() {
   return (
     <>
       <header id="header">
+
         <nav className="navbar">
-          <a href="#" className="logo">
+          <a href="temeyouzi.site" className="logo-img">
             تميزي | temeyouzi
           </a>
-
+<img src="LOGO.png" alt="go" className="logo-soura" />
           <div className="account">
             <ul>
               <li>

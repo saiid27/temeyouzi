@@ -258,7 +258,7 @@ body {
 }
 
 /* أي وسائط قد تتمدّد */
-img, video, svg, canvas {
+img, video, svg, png, canvas {
   max-width: 100%;
   height: auto;
   display: block;
@@ -322,6 +322,13 @@ span{
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
+}
+
+.logo-soura{
+    width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 
