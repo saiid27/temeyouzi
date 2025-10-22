@@ -47,7 +47,7 @@ function Header() {
         <nav className="navbar">
         
 <img src="LOGO.png" alt="go" className="logo-soura" />
-          <div className="account">
+          <div className="btn-join">
             <ul>
               <li>
                 <a href="https://login-amzm.vercel.app/">
