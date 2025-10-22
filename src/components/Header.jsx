@@ -49,6 +49,7 @@ function Header() {
 
           <div className="account">
             <ul>
+              <img src="LOGO.png" alt="go" className="logo-soura" />
               <li>
                 <a href="https://login-amzm.vercel.app/">
                   <HiOutlineLogin />
@@ -69,7 +70,7 @@ function Header() {
             </ul>
           </div>
         </nav>
-        <img src="LOGO.png" alt="go" className="logo-soura" />
+        
       </header>
 
       {/* نموذج الاشتراك المنبثق */}
