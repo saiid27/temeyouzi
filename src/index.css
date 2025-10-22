@@ -43,25 +43,32 @@ a{ text-decoration:none; color:inherit; }
 /* ====== Header ====== */
 #header{ background:rgba(98, 199, 199, 0.377); position:sticky; top:0; z-index:10; }
 
-.navbar{
-  display:flex; align-items:center; justify-content:space-between;
-  gap:12px; height:72px;
-  max-width:1100px; margin:auto; padding:0 2rem;
+.right-nav {
+  display: flex;
+  justify-content: flex-end; /* تأكيد أن الصورة تكون في اليمين */
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between; /* توزيع المحتوى بين اليسار واليمين */
+  align-items: center;
 }
 .navbar a{ color:#fff; }
 
 /* الشعار */
-.logo{
-  font-family:"Tajawal","Montserrat",sans-serif;
-  font-size:clamp(18px,2.5vw,24px); font-weight:800;
-}
+ .logo {
+    font-size: 18px;
+  }
 
 /* القائمة (حتى لو كانت فاضية) */
 .navbar ul{
-  display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+  display:flex; gap:6px; flex-wrap:wrap; align-items:center;
 }
 .navbar ul li a{
-  display:inline-block; padding:8px 10px; border-radius:8px;
+  display:inline-block; padding:8px 8px; border-radius:8px;
   font-weight:700; font-size:clamp(13px,2.2vw,15px);
   transition:color .3s ease, background .2s ease;
 }
@@ -69,11 +76,16 @@ a{ text-decoration:none; color:inherit; }
 
 /* الحساب */
 .account{ display:flex; align-items:center; }
-.account ul{ display:flex; align-items:center; gap:10px; }
-
+.account ul {
+  display: flex;
+  gap: 20px;
+}
+.account li {
+  list-style: none;
+}
 .account a{
   display:inline-flex; align-items:center; gap:6px;
-  padding:8px 12px; border-radius:8px; font-size:14px; font-weight:700;
+  padding:7px 10px; border-radius:8px; font-size:14px; font-weight:700;
   color:#fff;
   background: #39a1e6;
 }
@@ -82,7 +94,10 @@ a{ text-decoration:none; color:inherit; }
   padding:8px 14px; border-radius:8px; font-weight:800; font-size:14px;
   transition:filter .2s ease;
 }
-
+.account{
+  color: #39a1e6;
+  
+}
 .account .btn-join:hover{ filter:brightness(1.07); }
 
 /* ====== Buttons عامة ====== */
@@ -329,8 +344,7 @@ span{
 .logo-soura{
     width: 150px;
   height: 150px;
-  display: block;
-  margin: 0 auto;
+ 
 }
 
 
@@ -411,5 +425,10 @@ span{
   padding: 10px 20px;
   border-radius: 6px;
 }
+
+
+
+
+
 
 

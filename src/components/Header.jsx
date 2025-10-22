@@ -46,7 +46,7 @@ function Header() {
 
         <nav className="navbar">
         
-<img src="LOGO.png" alt="go" className="logo-soura" />
+
           <div className="account">
             <ul>
               <li>
@@ -69,6 +69,7 @@ function Header() {
             </ul>
           </div>
         </nav>
+        <img src="LOGO.png" alt="go" className="logo-soura" />
       </header>
 
       {/* نموذج الاشتراك المنبثق */}
