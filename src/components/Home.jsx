@@ -176,6 +176,7 @@ function Home() {
                 onChange={handleChange}
                 required
               />
+              <img src="bankili.jpg" alt="go" className="prof-img" />
 
               <label>طريقة الدفع:</label>
               <select
