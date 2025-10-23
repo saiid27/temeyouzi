@@ -22,8 +22,7 @@ function App(){
        
         <span>
           
-      تواصل معنا  
-
+    هل لديك سؤال
         </span>
         <i className="fa fa-whatsapp"></i>
       </a>
